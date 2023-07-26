@@ -34,10 +34,10 @@
 </style>
 </head>
 <body class="bg-[#fff]">
-    <header class="space-y-10 py-5">
+    <header class="space-y-10">
         <!-- nav related style -->
-         <nav class="px-20">
-            <div class="navbar bg-[#F85559] rounded-3xl">
+         <nav class="w-[1350px] ms-20 h-[80px] bg-rose-500 rounded-[600px]">
+            <div class="navbar">
                 <div class="navbar-start">
                   <div class="">
                   <div class="">
@@ -118,7 +118,7 @@
               </div>
          </section>
          <!-- fruit style -->
-         <section class="ms-20 shadow-blue-500/50 p-4">
+         <section class="absolute top-[600px] w-[1196px] h-[200px] bg-white rounded-lg shadow p-10 ms-[150px]">
             <div  class="grid grid-cols-5">
                 <div>
                     <img src="images/fruit1.png" alt="">
@@ -143,8 +143,8 @@
             </div>
          </section>
          <!-- timer related -->
-         <section class="mx-20 text-[black]">
-            <div class="flex justify-between">
+         <section class="mx-20 h-[40vh] text-[black]">
+            <div class="flex justify-between pt-[150px]">
             <div>
                 <h1 class="text-4xl font-bold">Deal of the day</h1>
                 <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -174,7 +174,7 @@
                       <span class="countdown font-mono text-5xl">
                         <span style="--value:21;"></span>
                       </span>
-      
+                        sec
                     </div>
                   </div>
             </div>
@@ -183,6 +183,7 @@
 
     </header>
     <main>
+      <!-- card style -->
         <section>
             <div class="space-y-8 p-6 lg:flex lg:mx-20 lg:mt-10 lg:space-x-4">
                 <div class="card w-96 bg- shadow-xl">
@@ -201,10 +202,33 @@
                         <span class="fa fa-star"></span>
                      </div>
                       <div class="card-actions">
-                        <a class="text-[red]" href="">Details</a>
+                        <!-- Open the modal using ID.showModal() method -->
+<button class="btn btn-outline text-red-600 outline-none" onclick="my_modal_5.showModal()">details</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box bg-white">
+    <div class="flex items-center justify-center">
+      <img src="images/fruit6.png" alt="">
+    </div>
+    <h3 class="font-bold text-lg">Apple</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="rating">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+    </div>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+      <button class="btn btn-secondary">Buy Now</button>
+    </div>
+  </form>
+</dialog>
                       </div>
                     </div>
                   </div>
+                  <!-- card two -->
                 <div class="card w-96 bg- shadow-xl">
                     <figure class="px-10 pt-10">
                       <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
@@ -314,9 +338,59 @@
             </div>
         </section>
         <!-- last-main -->
-        <section>
-              
-        </section>
+        <section class="mt-[250px]">
+          <div>
+              <h2 class="text-center">why Choose Us</h2>
+              <p class="text-center">Contary to populat belif, is not simply random text.It has roots in a piece of classicalLatin literature
+                  from 45 BC, making it over 2000 years old.
+              </p>
+          </div>
+          <div class="grid grid-cols-3">
+              <div>
+                  <div>
+                      <h3>Dedicated Team</h3>
+                      <hr>
+                      <p>Professional employees are there for you to pick
+                          the most amazing and fresh fruits</p>
+                  </div>
+                  <div>
+                      <h3>Fresh is Best</h3>
+                      <hr>
+                      <p>Professional employees are there for you to pick
+                          the most amazing and fresh fruits</p>
+                  </div>
+                  <div>
+                      <h3>Gift Certificates</h3>
+                      <hr>
+                      <p>Professional employees are there for you to pick
+                          the most amazing and fresh fruits</p>
+                  </div>
+              </div>
+              <div>
+                  <img src="images/whychoose1.png" alt="">
+              </div>
+              <div>
+                  <div>
+                      <h3>Integrated Supplier</h3>
+                      <hr>
+                      <p>Professional employees are there for you to pick
+                          the most amazing and fresh fruits</p>
+                  </div>
+                  <div>
+                      <h3>Sustainable Practice</h3>
+                      <hr>
+                      <p>Professional employees are there for you to pick
+                          the most amazing and fresh fruits</p>
+                  </div>
+                  <div>
+                      <h3>The Benefits Only</h3>
+                      <hr>
+                      <p>Professional employees are there for you to pick
+                          the most amazing and fresh fruits</p>
+                  </div>
+              </div>
+          </div>
+      </section>
     </main>
     <footer class="bg-[black] mt-[300px] mx-20">
        <section class="p-20 space-y-5">
